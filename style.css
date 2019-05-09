@@ -1,0 +1,87 @@
+body {
+  text-align: center;
+  transition: background 500ms ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,p {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #fff;
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+p {
+  letter-spacing: normal;
+  font-size: 18px;
+  text-transform: none;
+  padding: 10px;
+}
+
+select#sel {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+h1,input,p,select,#btn, #disco {
+  transition: opacity 300ms ease;
+  opacity: 1;
+}
+
+.disco-active h1,
+.disco-active input,
+.disco-active p,
+.disco-active select,
+.disco-active #btn,
+.disco-active #disco {
+  opacity: 0;
+}
+
+span.close {
+    color: #000;
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 300ms ease;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+}
+
+.disco-active span.close {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    visibility: visible;
+} 
+
+button {
+    display: inline-block;
+    background-image: none;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 30px;
+    border: 1px solid #000;
+    outline: none;
+    transition: all 300ms ease;
+}
